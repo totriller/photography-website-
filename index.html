@@ -10,37 +10,21 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="images/favicon.ico">
-	<!-- Hotjar Tracking Code for  -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3244357,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 </head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6SVFSNRZHZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6SVFSNRZHZ');
-</script>
 <body>
     <header>
         <img src="images/logo.jpg" alt="">
 
     </header>
     <nav>
-        <ul>
+        <button onclick="myFunction()">&#9776;</button>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -53,23 +37,18 @@
             <div class="swiper-slide bg3"></div>
             <div class="swiper-slide bg4"></div>
             <div class="swiper-slide bg5"></div>
-        
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-    
+
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <b>
-	<br>
-	<br>
-	
-	<center> <h1> Wedding package </center> </h1>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-             navigation: {
+            navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             }, autoplay: {
@@ -81,83 +60,93 @@
             },
         });
     </script>
-    
+
     <div class="banner">
 
     </div>
+
+
     <div class="container">
-        <div class="grid-prices">
-            <div>
-                <h2>One</h2>
-                <h3>$1,200</h3>
-                <p>4 Hours Coverage</p>
-                <p>250+ Digital Images</p>
-                <p>Pro image editing</p>
-                <p>Online proof gallery</p>
-            </div>
+        <h2>Whiteville based photographer</h2>
+    </div>
 
-            <div>
-                <h2>Two</h2>
-                <h3>$2,300</h3>
-                <p>6 Hours Coverage</p>
-                <p>500+ Digital Images</p>
-                <p>Pro image editing</p>
-                <p>Online proof gallery</p>
-            </div>
-
-            <div>
-                <h2>Tree</h2>
-                <h3>$3,500</h3>
-                <p>8 Hours Coverage</p>
-                <p>1000+ Digital Images</p>
-                <p>Pro image editing</p>
-                <p>Online proof gallery</p>
+    <div class="container-full purple-border white">
+        <div class="container">
+            <h2 id="popular">Most Popular</h2>
+            
+            <div class="grid2">
+                <div>
+                    <h3>Wedding package</h3>
+                    <h3>One</h3>
+                    <h3>$1,200</h3>
+                    <p>4 Hours Coverage</p>
+                    <p>250+ Digital Images</p>
+                    <p>Pro image editing</p>
+                    <p>Online proof gallery</p>
+                </div>
+            
+                <div>
+                    <h3>OUTDOOR PORTRAITS</h3>
+                    <h3>30 minutes @ $150.00</h3>
+                    <p>Book</p>
+                    <p>$75 Deposit</p>
+                    <p>1 Location</p>
+                    <p>10 images released</p>
+                    <p>Unlimited poses</p>
+                </div>
             </div>
         </div>
+        
     </div>
+
     <div class="container-full purple-border purple">
         <div class="container">
             <h2>SPECIAL OFFER</h2>
 
-            <p>Get 30% off any package when you book before December 30. 2022 Restrictions apply. Please contact us for details.</p>
+            <p>Get 30% off any package when you book before December 30. 2022 Restrictions apply. Please contact us for
+                details.</p>
 
-            <span><a href="mailto:Totrillerphotography@gmail.com">Totrillerphotography@gmail.com</a> | 
-            <a href="tel:+19103170669">(910) 317-0669</a></span>
+            <span><a href="mailto:Totrillerphotography@gmail.com">Totrillerphotography@gmail.com</a> |
+                <a href="tel:+19103170669">(910) 317-0669</a></span>
         </div>
     </div>
 
     <div class="container-full purple-border white">
         <div class="container">
-        
+
             <h2>COSTUMER REVIEWS</h2>
-        
+
             <div class="reviews">
                 <div>
                     <h3>iamCurtisee</h3>
-                    <p>Professionalism, Quality, Responsiveness
-                        Great Quality, Professional and Punctual. Definitely looking forward to some more of their work.</p>
+                    <p>Positive: Professionalism, Quality, Responsiveness
+                        Great Quality, Professional and Punctual. Definitely looking forward to some more of their work.
+                    </p>
                     <span class="stars">★★★★★</span>
                 </div>
-        
+
                 <div>
                     <h3>Duncan</h3>
-                    <p>Totriller Photography is the best for real.. Seriously got the right tools for crispy scrumptious looking
+                    <p>Totriller Photography is the best for real.. Seriously got the right tools for crispy scrumptious
+                        looking
                         photos that
                         made me real happy :) Thanks Totriller ♥</p>
                     <span class="stars">★★★★★</span>
                 </div>
-        
+
                 <div>
                     <h3>Dezire The Singer Official</h3>
-                    <p>He did a great job with my photoshoot. You definitely will get more than what u payed for because his
+                    <p>He did a great job with my photoshoot. You definitely will get more than what u payed for because
+                        his
                         quality is dope
                         and he puts his time and dedication into every one. Definitely will be coming back. 💪🏾</p>
                     <span class="stars">★★★★★</span>
                 </div>
-        
+
                 <div>
                     <h3>Amelia</h3>
-                    <p>"THEIR WORK REALLY CAPTURES THE EMOTION AND FEELINGS OF THE MOMENT, LEADING TO BEAUTIFUL PHOTOS THAT
+                    <p>"THEIR WORK REALLY CAPTURES THE EMOTION AND FEELINGS OF THE MOMENT, LEADING TO BEAUTIFUL PHOTOS
+                        THAT
                         TRULY TAKE YOU BACK
                         IN TIME."</p>
                     <span class="stars">★★★★★</span>
@@ -168,11 +157,11 @@
 
     <div class="container-full purple-border white">
         <div class="container">
-    
+
             <h2>SERVING</h2>
-    
+
             <div class="serving">
-                <div>                  
+                <div>
                     <p>Whiteville,NC</p>
                     <p>Fayetteville, NC</p>
                     <p>Wilmington, NC</p>
@@ -191,8 +180,8 @@
                     <p>Wrightsville Beach, NC</p>
                     <p>Surf city, NC</p>
                 </div>
-    
-               
+
+
             </div>
         </div>
     </div>
@@ -203,11 +192,13 @@
         <a href="tel:+19103170669">Tel: (910) 317-0669</a>
         <div class="socials">
             <a href="https://www.facebook.com/Totrillerphotograpy"><img src="images/facebook.svg" alt="facebook"></a>
-            <a href="https://www.instagram.com/totriller_photography/"><img src="images/instagram.svg" alt="instagram"></a>
+            <a href="https://www.instagram.com/totriller_photography/"><img src="images/instagram.svg"
+                    alt="instagram"></a>
         </div>
     </footer>
 
-    
+    <script src="js/menu.js"></script>
+
 </body>
 
 </html>

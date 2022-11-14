@@ -25,6 +25,8 @@ p {
     line-height: 1.8;
 }
 
+
+
 header img {
     margin: 0 auto;
     display: block;
@@ -78,8 +80,8 @@ img {
 .container {
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 20px auto;
+
     overflow: hidden;
 
 }
@@ -93,8 +95,8 @@ nav {
     z-index: 10;
 }
 
-nav ul {
-    display: inline-block;
+.menu {
+    display: inline-flex;
 }
 
 nav li {
@@ -115,6 +117,10 @@ nav li a {
     gap: 20px;
 }
 
+.centered {
+    grid-template-columns: 1fr;
+}
+
 .grid-prices p {
     text-transform: uppercase;
 }
@@ -131,6 +137,8 @@ h2 {
     margin: 10px 0;
     font-weight: 100;
 }
+
+
 
 h3 {
     font-size: 25px;
@@ -160,7 +168,7 @@ span {
     border: 1px solid #c152c2;
 }
 
-span a{
+span a {
     text-decoration: none;
     color: #c152c2;
 }
@@ -247,8 +255,6 @@ footer a {
     height: 100%;
     object-fit: cover;
     aspect-ratio: 2/1;
-
-
 }
 
 .swiper-button-next:after,
@@ -261,6 +267,146 @@ footer a {
     color: #c152c2;
 }
 
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form {
+    margin: 5px;
+    padding: 20px;
+    background-color: black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    min-height: 725px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    ;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-bottom: 2px solid #c152c2;
+    background-color: inherit;
+    color: white;
+    font-size: 15px;
+    caret-color: #c152c2;
+
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+button {
+    width: 100px;
+    margin: 0 auto;
+    background-color: #0000007c;
+    font-size: 20px;
+    color: #c152c2;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c152c2;
+    color: #1a1a1a;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+label {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    background-color: black;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #c152c2;
+}
+
+
+.payment img {
+    width: 120px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.payment {
+    display: inline-block;
+}
+
+.payment img:hover {
+    background-color: #c152c2;
+}
+
+.support {
+    text-transform: none;
+    text-decoration: none;
+    color: #c152c2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    gap: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
     .gallery {
         column-count: 2;
@@ -270,6 +416,24 @@ footer a {
         grid-template-columns: 1fr;
         gap: 50px;
     }
+
+    .contacts-grid {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .contacts-grid h3 {
+        margin: 30px 0;
+    }
+}
+
+nav button {
+    display: none;
+    background-color: transparent;
+}
+
+#popular {
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -282,7 +446,8 @@ footer a {
         margin: 40px 0;
     }
 
-    .grid-prices {
+    .grid-prices,
+    .grid2 {
         grid-template-columns: 1fr;
         margin: 0;
     }
@@ -295,15 +460,48 @@ footer a {
 
         margin: 20px 0;
     }
+
+    form {
+        padding: 0;
+    }
+
+    nav button {
+        display: block !important;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav li {
+        float: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    nav button {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-
 
     span,
     footer a {
         font-size: 3.5vw;
         margin: 20px 0;
         padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .menu {
+        display: inline-flex !important;
+    }
+
+    nav button {
+        display: none !important;
     }
 }
